@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.1" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIModelBasedInstrument name="PXI1Slot4" instrumentModel="PXIe-5842 with PXIe-5633" category="RF" subcategory="PXIe-5842">
+			<Resource owner="VST">
+				<UserData propertyName="Resource Name" propertyValue="PXI1Slot4" />
+				<UserData propertyName="Custom FPGA File" propertyValue="" />
+			</Resource>
+		</NIModelBasedInstrument>
+		<NIModelBasedInstrument name="PXI2Slot4" instrumentModel="PXIe-5842 with PXIe-5633" category="RF" subcategory="PXIe-5842">
+			<Resource owner="VST">
+				<UserData propertyName="Resource Name" propertyValue="PXI2Slot4" />
+				<UserData propertyName="Custom FPGA File" propertyValue="" />
+			</Resource>
+		</NIModelBasedInstrument>
+	</Instruments>
+	<Pins>
+		<DUTPin name="RFIN" />
+		<DUTPin name="RFOUT" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+		<Site siteNumber="1" />
+	</Sites>
+	<Connections>
+		<Connection pin="RFIN" siteNumber="0" instrument="PXI1Slot4" channel="Port1" />
+		<Connection pin="RFIN" siteNumber="1" instrument="PXI2Slot4" channel="Port1" />
+		<Connection pin="RFOUT" siteNumber="0" instrument="PXI1Slot4" channel="Port2" />
+		<Connection pin="RFOUT" siteNumber="1" instrument="PXI2Slot4" channel="Port2" />
+	</Connections>
+</PinMap>

@@ -1,0 +1,3 @@
+Site,Pin,8GHz PXI SG Path,8GHz PXI SA Path,Cal Tone Site,Cal Tone Source,High Limit,Low Limit,Interval,Sweep Name,Power,Reference Level,Frequencies,
+0,TX,1,,,,2,-2,30,sweep0,-10,,{5G:0.1G:8G},
+0,ANT,,1,0,TX,-15,-25,30,sweep1,-10,-5,{5G:0.1G:8G},

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xeb55nCs5hQ=",
+  "success": true,
+  "projectFilePath": "C:\\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\\RF_Demo_20250205_01\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nitest\\.nuget\\packages\\nationalinstruments.semiconductortestlibrary\\24.5.0\\nationalinstruments.semiconductortestlibrary.24.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

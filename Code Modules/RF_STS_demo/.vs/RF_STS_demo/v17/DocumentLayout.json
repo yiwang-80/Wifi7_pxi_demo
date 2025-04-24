@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\\RF_Demo_20250205_01\\Code Modules\\RF_STS_demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{283057A3-D667-41DB-97BA-DCE6BC9C5C58}|RF_STS_demo.csproj|c:\\amer-sebu-nird-wifi7 sts demo-03487917\\rf_demo_20250205_01\\code modules\\rf_sts_demo\\iip3_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283057A3-D667-41DB-97BA-DCE6BC9C5C58}|RF_STS_demo.csproj|solutionrelative:iip3_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IIP3_Test.cs",
+              "DocumentMoniker": "C:\\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\\RF_Demo_20250205_01\\Code Modules\\RF_STS_demo\\IIP3_Test.cs",
+              "RelativeDocumentMoniker": "IIP3_Test.cs",
+              "ToolTip": "C:\\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\\RF_Demo_20250205_01\\Code Modules\\RF_STS_demo\\IIP3_Test.cs",
+              "RelativeToolTip": "IIP3_Test.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowGkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T06:25:53.263Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

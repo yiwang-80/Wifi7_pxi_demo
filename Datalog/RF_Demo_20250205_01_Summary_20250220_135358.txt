@@ -1,0 +1,14 @@
+Test Program: C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RF_Demo_20250205_01.seq
+Active Configuration: Production
+Offline Mode: Disabled
+Process Model: C:\Program Files\National Instruments\TestStand 2023\Components\Models\TestStandModels\BatchModel.seq
+Operator Interface: C:\Program Files\National Instruments\TestStand 2023\UserInterfaces\NI_SemiconductorModule\LabVIEW\SemiOI.exe
+Operator Interface Arguments: /NoCompatibilityIssuesDialog /run "Measure Test Program Performance" "C:\Program Files\National Instruments\TestStand 2023\Components\Modules\NI_SemiconductorModule\NI_SemiconductorModule_PerformanceMeasurement.seq" /quit
+LabVIEW Adapter Server: LabVIEW Run-Time Engine (AutoDetect)
+Enabled Result Processors: NI_SemiconductorModule_LotSummaryReportGenerator.seq, NI_SemiconductorModule_StdfGenerator.seq
+Notes: 
+TestStand Version: 23.0.0
+TSM Version: 2024 Q3 (23.1.0.49415)
+TSM Runtime Version: 2024 Q3 (23.1.0.49415)
+STS Software Version: NI STS Development Software 24.5
+Number Of Sites: 1

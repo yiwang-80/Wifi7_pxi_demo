@@ -1,0 +1,5 @@
+Site,Pin,8GHz SG Path,8GHz SA Path,Cal Tone Site,Cal Tone Source,High Limit,Low Limit,Interval,Sweep Name,Power,Reference Level,Frequencies,,
+0,RFIN,1,,,,-5,-15,30,sweep0,-10,,{2.1G:0.1G:2.4G},2500000000,
+0,RFOUT,,1,0,RFIN,-5,-15,30,sweep1,-10,-5,2100000000,2.30E+09,2500000000
+1,RFIN,1,,,,-5,-15,30,sweep0,,,,,
+1,RFOUT,,1,1,RFIN,-5,-15,30,sweep1,,,,,

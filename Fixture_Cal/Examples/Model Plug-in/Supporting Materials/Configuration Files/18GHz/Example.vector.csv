@@ -1,0 +1,5 @@
+Site,Pin,Relay Configuration,High Limit,Low Limit,Interval,Sweep Name,Power,Reference Level,Frequencies,,,,
+0,RFIN,ConfigSGPath,0,-5,30,mySweep,-10,-5,{2G:100M:2.4G}
+0,RFOUT,ConfigSGPath,0,-5,30,mySweep,,,,,,,
+1,RFIN,ConfigSGPath,0,-5,30,mySweep,,,,,,,,
+1,RFOUT,ConfigSGPath,0,-5,30,mySweep,,,,,,,

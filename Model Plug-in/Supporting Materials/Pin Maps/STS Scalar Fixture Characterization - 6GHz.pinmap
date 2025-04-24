@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.4" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIRFPMInstrument name="VST_5841_Cx_Sxx" portsList="1-12" calibrationFilePath="..\Calibration Data\VST_5841_Cx_Sxx.tdms" iviSwitchName="VST_5841_Cx_Sxx" fpgaFilePath="" />
+	</Instruments>
+	<Pins>
+		<DUTPin name="RFIN" />
+		<DUTPin name="RFOUT" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="RFIN" siteNumber="0" instrument="VST_5841_Cx_Sxx" channel="port1" deembeddingFilePath="..\Calibration Data\RF Deembedding\port1_RFIN_Scalar.s2p" />
+		<Connection pin="RFOUT" siteNumber="0" instrument="VST_5841_Cx_Sxx" channel="port2" deembeddingFilePath="..\Calibration Data\RF Deembedding\port2_RFOUT_Scalar.s2p" />
+	</Connections>
+</PinMap>

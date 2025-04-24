@@ -1,0 +1,241 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEDUTSpecific\\NIDefaultTemplate.csproj": {}
+  },
+  "projects": {
+    "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEBase\\RFFEBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEBase\\RFFEBase.csproj",
+        "projectName": "RFFEBase",
+        "projectPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEBase\\RFFEBase.csproj",
+        "packagesPath": "C:\\Users\\STSadmin\\.nuget\\packages\\",
+        "outputPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\NuGet.Config",
+          "C:\\Users\\STSadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj": {
+                "projectPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1507"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )",
+              "versionCentrallyManaged": true
+            },
+            "NationalInstruments.SemiconductorTestLibrary": {
+              "target": "Package",
+              "version": "[25.0.0.32, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Microsoft.CSharp": "4.7.0",
+            "NationalInstruments.SemiconductorTestLibrary": "25.0.0.32",
+            "System.Data.DataSetExtensions": "4.5.0"
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEDUTSpecific\\NIDefaultTemplate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEDUTSpecific\\NIDefaultTemplate.csproj",
+        "projectName": "NIDefaultTemplate",
+        "projectPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEDUTSpecific\\NIDefaultTemplate.csproj",
+        "packagesPath": "C:\\Users\\STSadmin\\.nuget\\packages\\",
+        "outputPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEDUTSpecific\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\NuGet.Config",
+          "C:\\Users\\STSadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEBase\\RFFEBase.csproj": {
+                "projectPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\RFFEBase\\RFFEBase.csproj"
+              },
+              "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj": {
+                "projectPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1507"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )",
+              "versionCentrallyManaged": true
+            },
+            "NationalInstruments.SemiconductorTestLibrary": {
+              "target": "Package",
+              "version": "[25.0.0.32, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Microsoft.CSharp": "4.7.0",
+            "NationalInstruments.SemiconductorTestLibrary": "25.0.0.32",
+            "System.Data.DataSetExtensions": "4.5.0"
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj",
+        "projectName": "NationalInstruments.SemiconductorTestLibrary.TestStandSteps",
+        "projectPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\SemiconductorTestLibrary.TestStandSteps.csproj",
+        "packagesPath": "C:\\Users\\STSadmin\\.nuget\\packages\\",
+        "outputPath": "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\RFFEDotNetRefLibrary\\SemiconductorTestLibrary.TestStandSteps\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\NuGet.Config",
+          "C:\\Users\\STSadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\srd-sebu-apt-ref-solutions\\AutomationFramework\\Code Modules\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU1507"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "NationalInstruments.SemiconductorTestLibrary": {
+              "target": "Package",
+              "version": "[25.0.0.32, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Microsoft.CSharp": "4.7.0",
+            "NationalInstruments.SemiconductorTestLibrary": "25.0.0.32",
+            "System.Data.DataSetExtensions": "4.5.0"
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

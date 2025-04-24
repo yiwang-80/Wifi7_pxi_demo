@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemConfiguration schemaVersion="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ni.com/TestStand/SemiconductorModule/SystemConfiguration.xsd">
+	<PXIChassis Number="1" Model="NI PXIe-1095">
+		<PXI Name="VNA_1" Model="NI PXIe-5633" Slot="12" NeedsIvi="false" />
+		<PXI Name="VNA_2" Model="NI PXIe-5633" Slot="13" NeedsIvi="false" />
+		<PXI Name="RF_1" Model="NI PXIe-5860" Slot="14" NeedsIvi="false" AuxPosition="Parallel">
+			<RemoteMeasurementModule Name="rmm0" Model="NI RMM-5544 (26.5GHz,26.5GHz)" Number="0">
+				<PortAlias Number="0" Position="B213" />
+				<PortAlias Number="1" Position="B214" />
+				<PortAlias Number="2" Position="B215" />
+				<PortAlias Number="3" Position="B216" />
+				<PortAlias Number="4" Position="B217" />
+				<PortAlias Number="5" Position="B218" />
+				<PortAlias Number="6" Position="B219" />
+				<PortAlias Number="7" Position="B220" />
+				<PortAlias Number="8" Position="B221" />
+				<PortAlias Number="9" Position="B222" />
+				<PortAlias Number="10" Position="B223" />
+				<PortAlias Number="11" Position="B224" />
+			</RemoteMeasurementModule>
+			<RemoteMeasurementModule Name="rmm1" Model="NI RMM-5544 (26.5GHz,26.5GHz)" Number="1">
+				<PortAlias Number="0" Position="B225" />
+				<PortAlias Number="1" Position="B226" />
+				<PortAlias Number="2" Position="B227" />
+				<PortAlias Number="3" Position="B228" />
+				<PortAlias Number="4" Position="B229" />
+				<PortAlias Number="5" Position="B230" />
+				<PortAlias Number="6" Position="B231" />
+				<PortAlias Number="7" Position="B232" />
+				<PortAlias Number="8" Position="B233" />
+				<PortAlias Number="9" Position="B234" />
+				<PortAlias Number="10" Position="B235" />
+				<PortAlias Number="11" Position="B236" />
+			</RemoteMeasurementModule>
+		</PXI>
+	</PXIChassis>
+	<DeviceAssociations>
+		<DeviceAssociation ParentDeviceName="RF_1" ChildDeviceName="VNA_1" Purpose="RfSwitchCh0" />
+		<DeviceAssociation ParentDeviceName="RF_1" ChildDeviceName="VNA_2" Purpose="RfSwitchCh1" />
+	</DeviceAssociations>
+</SystemConfiguration>

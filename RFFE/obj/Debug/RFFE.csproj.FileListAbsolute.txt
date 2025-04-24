@@ -1,0 +1,17 @@
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\RFFE.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\RFFE.pdb
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.ModularInstruments.NIRfsg.Fx45.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.RFmx.InstrMX.Fx40.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.Common.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\Ivi.Driver.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.ModularInstruments.Common.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.ModularInstruments.NIRfsg.Fx45.xml
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.RFmx.InstrMX.Fx40.xml
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.Common.xml
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\Ivi.Driver.xml
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\bin\Debug\NationalInstruments.ModularInstruments.Common.xml
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\obj\Debug\RFFE.csproj.AssemblyReference.cache
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\obj\Debug\RFFE.csproj.CoreCompileInputs.cache
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\obj\Debug\RFFE.csproj.Up2Date
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\obj\Debug\RFFE.dll
+C:\AMER-SEBU-NIRD-WIFI7 STS Demo-03487917\RF_Demo_20250205_01\RFFE\obj\Debug\RFFE.pdb

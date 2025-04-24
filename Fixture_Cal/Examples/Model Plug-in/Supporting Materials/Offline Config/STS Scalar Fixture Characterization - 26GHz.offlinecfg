@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemConfiguration schemaVersion="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ni.com/TestStand/SemiconductorModule/SystemConfiguration.xsd">
+	<PXIChassis Number="1" Model="NI PXIe-1095">
+		<PXI Name="RF_1" Model="NI PXIe-5842" Slot="5" NeedsIvi="false" Variant="26.5GHz">
+			<RemoteMeasurementModule Name="rmm0" Model="NI RMM-5546" Number="0">
+				<PortAlias Number="0" Position="B213" />
+				<PortAlias Number="1" Position="B214" />
+				<PortAlias Number="2" Position="B215" />
+				<PortAlias Number="3" Position="B216" />
+				<PortAlias Number="4" Position="B217" />
+				<PortAlias Number="5" Position="B218" />
+				<PortAlias Number="6" Position="B219" />
+				<PortAlias Number="7" Position="B220" />
+				<PortAlias Number="8" Position="B221" />
+				<PortAlias Number="9" Position="B222" />
+				<PortAlias Number="10" Position="B223" />
+				<PortAlias Number="11" Position="B224" />
+			</RemoteMeasurementModule>
+		</PXI>
+		<PXI Name="LO_1" Model="NI PXIe-5655" Slot="8" NeedsIvi="false" />
+		<PXI Name="VNA_1" Model="NI PXIe-5633" Slot="9" NeedsIvi="false" />
+	</PXIChassis>
+	<PXIChassis Number="2" Model="NI PXIe-1095">
+		<PXI Name="RF_2" Model="NI PXIe-5842" Slot="5" NeedsIvi="false" Variant="26.5GHz">
+			<RemoteMeasurementModule Name="rmm0" Model="NI RMM-5546" Number="0">
+				<PortAlias Number="0" Position="B261" />
+				<PortAlias Number="1" Position="B262" />
+				<PortAlias Number="2" Position="B263" />
+				<PortAlias Number="3" Position="B264" />
+				<PortAlias Number="4" Position="B265" />
+				<PortAlias Number="5" Position="B266" />
+				<PortAlias Number="6" Position="B267" />
+				<PortAlias Number="7" Position="B268" />
+				<PortAlias Number="8" Position="B269" />
+				<PortAlias Number="9" Position="B270" />
+				<PortAlias Number="10" Position="B271" />
+				<PortAlias Number="11" Position="B272" />
+			</RemoteMeasurementModule>
+		</PXI>
+		<PXI Name="LO_2" Model="NI PXIe-5655" Slot="8" NeedsIvi="false" />
+		<PXI Name="VNA_2" Model="NI PXIe-5633" Slot="9" NeedsIvi="false" />
+	</PXIChassis>
+	<DeviceAssociations>
+		<DeviceAssociation ParentDeviceName="RF_1" ChildDeviceName="LO_1" Purpose="LO" />
+		<DeviceAssociation ParentDeviceName="RF_1" ChildDeviceName="VNA_1" Purpose="Switch" />		
+		<DeviceAssociation ParentDeviceName="RF_2" ChildDeviceName="LO_2" Purpose="LO" />
+		<DeviceAssociation ParentDeviceName="RF_2" ChildDeviceName="VNA_2" Purpose="Switch" />		
+	</DeviceAssociations>
+</SystemConfiguration>

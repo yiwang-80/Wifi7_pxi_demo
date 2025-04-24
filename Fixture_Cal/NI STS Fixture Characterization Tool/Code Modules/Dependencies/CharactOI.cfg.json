@@ -1,0 +1,65 @@
+{
+  "SupportedPathTypes": [
+    {
+      "ColumnHeaderName": "SG SC2250 Resource Name",
+      "Type": "SG SC2250"
+    },
+	{
+      "ColumnHeaderName": "SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "SA Path",
+      "Type": "SA"
+    },
+    {
+      "ColumnHeaderName": "8GHz SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "8GHz SA Path",
+      "Type": "SA"
+    },	
+    {
+      "ColumnHeaderName": "8GHz PXI SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "8GHz PXI SA Path",
+      "Type": "SA"
+    },	
+    {
+      "ColumnHeaderName": "18GHz SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "18GHz SA Path",
+      "Type": "SA"
+    },
+    {
+      "ColumnHeaderName": "26GHz SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "26GHz SA Path",
+      "Type": "SA"
+    },
+    {
+      "ColumnHeaderName": "26GHz PXI SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "26GHz PXI SA Path",
+      "Type": "SA"
+    },	
+    {
+      "ColumnHeaderName": "54GHz SG Path",
+      "Type": "SG"
+    },
+    {
+      "ColumnHeaderName": "54GHz SA Path",
+      "Type": "SA"
+    }
+  ],
+  "ColumnsToDisplay": ["Relay Configuration","Cal Tone Relay Configuration"]
+}

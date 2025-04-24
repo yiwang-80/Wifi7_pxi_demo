@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.1" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIModelBasedInstrument name="RF_1" instrumentModel="8.5 GHz STS RF Subsystem" category="RF" subcategory="8.5GHz">
+			<Resource owner="VST">
+				<UserData propertyName="Resource Name" propertyValue="RF_1" />
+				<UserData propertyName="Custom FPGA File" propertyValue="" />
+			</Resource>
+		</NIModelBasedInstrument>
+	</Instruments>
+	<Pins>
+		<DUTPin name="RFIN" />
+		<DUTPin name="RFOUT" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+		<Site siteNumber="1" />
+	</Sites>
+	<Connections>
+		<Connection pin="RFIN" siteNumber="0" instrument="RF_1" channel="B213" />
+		<Connection pin="RFIN" siteNumber="1" instrument="RF_1" channel="B225" />
+		<Connection pin="RFOUT" siteNumber="0" instrument="RF_1" channel="B219" />
+		<Connection pin="RFOUT" siteNumber="1" instrument="RF_1" channel="B231" />
+	</Connections>
+</PinMap>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.6" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIDigitalPatternInstrument name="HSD_6571_C1_S03" numberOfChannels="32" group="digital0" />
+		<NIModelBasedInstrument name="VST_5860_C1_S04" instrumentModel="PXIe-5860" category="RF" subcategory="PXIe-5860">
+			<Resource owner="VST">
+				<UserData propertyName="Resource Name" propertyValue="VST_5860_C1_S04" />
+				<UserData propertyName="Custom FPGA File" propertyValue="" />
+			</Resource>
+		</NIModelBasedInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C1_S02" numberOfChannels="4">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+	</Instruments>
+	<Pins>
+		<DUTPin name="TX" />
+		<DUTPin name="ANT" />
+		<DUTPin name="VDET" />
+		<DUTPin name="LNA_EN" />
+		<DUTPin name="VCC1" />
+		<DUTPin name="VCC2" />
+		<DUTPin name="VDD" />
+		<DUTPin name="PA_EN" />
+	</Pins>
+	<PinGroups>
+		<PinGroup name="Power_Supplies">
+			<PinReference pin="VCC1" />
+			<PinReference pin="VCC2" />
+			<PinReference pin="VDD" />
+		</PinGroup>
+		<PinGroup name="Control_Pins">
+			<PinReference pin="LNA_EN" />
+			<PinReference pin="PA_EN" />
+		</PinGroup>
+		<PinGroup name="Detect_Pins">
+			<PinReference pin="VDET" />
+		</PinGroup>
+		<PinGroup name="Continuity_Pins">
+			<PinReference pin="LNA_EN" />
+			<PinReference pin="PA_EN" />
+		</PinGroup>
+	</PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="ANT" siteNumber="0" instrument="VST_5860_C1_S04" channel="In0" />
+		<Connection pin="VDET" siteNumber="0" instrument="HSD_6571_C1_S03" channel="31" />
+		<Connection pin="LNA_EN" siteNumber="0" instrument="HSD_6571_C1_S03" channel="2" />
+		<Connection pin="PA_EN" siteNumber="0" instrument="HSD_6571_C1_S03" channel="1" />
+		<Connection pin="TX" siteNumber="0" instrument="VST_5860_C1_S04" channel="Out0" />
+		<Connection pin="VCC1" siteNumber="0" instrument="SMU_4147_C1_S02" channel="0" />
+		<Connection pin="VCC2" siteNumber="0" instrument="SMU_4147_C1_S02" channel="1" />
+		<Connection pin="VDD" siteNumber="0" instrument="SMU_4147_C1_S02" channel="2" />
+	</Connections>
+</PinMap>

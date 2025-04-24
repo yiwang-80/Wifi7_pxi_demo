@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.5" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIRFPMInstrument name="VST_5841_C1_Sxx" portsList="1-4" calibrationFilePath="..\Calibration Data\VST_5841_C1_Sxx.tdms" iviSwitchName="VST_5841_C1_Sxx" fpgaFilePath="" />
+		<NIRFPMInstrument name="VST_5841_C2_Sxx" portsList="25-28" calibrationFilePath="..\Calibration Data\VST_5841_C2_Sxx.tdms" iviSwitchName="VST_5841_C2_Sxx" fpgaFilePath="" />
+		<NIDigitalPatternInstrument name="HSD_6571_C1_Sxx" numberOfChannels="32" />
+		<NIDigitalPatternInstrument name="HSD_6571_C2_Sxx" numberOfChannels="32" />
+		<NIDCPowerInstrument name="SMU_4162_C1_Sxx" numberOfChannels="4" />
+		<NIDCPowerInstrument name="SMU_4162_C2_Sxx" numberOfChannels="4" />
+		<NIRelayDriverModule name="RELAY_2567_C1_Sxx" numberOfControlLines="64" />
+	</Instruments>
+	<Pins>
+		<DUTPin name="RFIN" />
+		<DUTPin name="RFOUT" />
+		<DUTPin name="VCC" />
+		<DUTPin name="TXEN" />
+	</Pins>
+	<PinGroups>
+		<PinGroup name="Digital_Ctrl">
+			<PinReference pin="TXEN" />
+		</PinGroup>
+	</PinGroups>
+	<Relays>
+		<SiteRelay name="K1" />
+		<SiteRelay name="K2" />
+		<SiteRelay name="K3" />
+		<SiteRelay name="K4" />
+	</Relays>
+	<RelayConfigurations>
+		<RelayConfiguration name="ConfigSGPath">
+			<RelayPosition relay="K1" position="Open" />
+			<RelayPosition relay="K2" position="Closed" />
+		</RelayConfiguration>
+		<RelayConfiguration name="ConfigSAPath">
+			<RelayPosition relay="K3" position="Closed" />
+			<RelayPosition relay="K4" position="Open" />
+		</RelayConfiguration>
+	</RelayConfigurations>
+	<Sites>
+		<Site siteNumber="0" />
+		<Site siteNumber="1" />
+	</Sites>
+	<Connections>
+		<Connection pin="RFIN" siteNumber="0" instrument="VST_5841_C1_Sxx" channel="port1" />
+		<Connection pin="RFIN" siteNumber="1" instrument="VST_5841_C2_Sxx" channel="port25" />
+		<Connection pin="RFOUT" siteNumber="0" instrument="VST_5841_C1_Sxx" channel="port2" />
+		<Connection pin="RFOUT" siteNumber="1" instrument="VST_5841_C2_Sxx" channel="port26" />
+		<Connection pin="TXEN" siteNumber="0" instrument="HSD_6571_C1_Sxx" channel="0" />
+		<Connection pin="TXEN" siteNumber="1" instrument="HSD_6571_C2_Sxx" channel="0" />
+		<Connection pin="VCC" siteNumber="0" instrument="SMU_4162_C1_Sxx" channel="0" />
+		<Connection pin="VCC" siteNumber="1" instrument="SMU_4162_C2_Sxx" channel="0" />
+		<RelayConnection relay="K1" siteNumber="0" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K1" />
+		<RelayConnection relay="K1" siteNumber="1" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K5" />
+		<RelayConnection relay="K2" siteNumber="0" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K2" />
+		<RelayConnection relay="K2" siteNumber="1" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K6" />
+		<RelayConnection relay="K3" siteNumber="0" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K3" />
+		<RelayConnection relay="K3" siteNumber="1" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K7" />
+		<RelayConnection relay="K4" siteNumber="0" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K4" />
+		<RelayConnection relay="K4" siteNumber="1" relayDriverModule="RELAY_2567_C1_Sxx" controlLine="K8" />
+	</Connections>
+</PinMap>

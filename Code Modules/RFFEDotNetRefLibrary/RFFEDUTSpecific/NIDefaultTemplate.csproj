@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NationalInstruments.ModularInstruments.Common, Version=24.3.45.3, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\National Instruments\InstrumentStudio\NationalInstruments.ModularInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.ModularInstruments.NIDCPower.Fx40, Version=24.3.0.220, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.ModularInstruments.NIDCPower.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.LteMX.Fx40, Version=24.3.0.98, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.RFmx.LteMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.NRMX.Fx40, Version=24.3.0.21, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.RFmx.NRMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.SpecAnMX.Fx40, Version=24.3.0.19, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.RFmx.SpecAnMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.SETestLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2eaa5af0834e221d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\National Instruments\Shared\NI-SETL\4.0.0\NationalInstruments.SETestLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.TestStand.SemiconductorModule.CodeModuleAPI, Version=23.1.0.0, Culture=neutral, PublicKeyToken=060817a57c0f1a42, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\National Instruments\TestStand 2023\API\DotNET\Assemblies\CurrentVersion\NationalInstruments.TestStand.SemiconductorModule.CodeModuleAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.TSMRFSteps.TSMSupport">
+      <HintPath>C:\Program Files\National Instruments\TestStand 2023\Components\StepTypes\NI_TSMRFSteps\NationalInstruments.TSMRFSteps.TSMSupport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RFFEBase\RFFEBase.csproj" />
+    <ProjectReference Include="..\SemiconductorTestLibrary.TestStandSteps\SemiconductorTestLibrary.TestStandSteps.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" />
+    <PackageReference Include="NationalInstruments.SemiconductorTestLibrary">
+      <IncludeAssets>All</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <PropertyGroup />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /Y /I &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Bin\&quot;" />
+  </Target>
+</Project>

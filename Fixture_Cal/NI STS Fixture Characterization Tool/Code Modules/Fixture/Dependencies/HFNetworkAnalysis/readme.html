@@ -1,0 +1,525 @@
+<!DOCTYPE HTML PUBLIC "//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script>
+function Link(URL)
+{
+window.location = URL;
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>NI High Frequency Network Analysis Library 1.0 Readme</title>
+
+<style>
+/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should
+need. */
+/* The default style of P is red to alert you that you need to apply a style
+class, such as Body. */
+P { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt;
+color: #FF0000; }
+BR { font-size:4.00pt; }
+/* Use H1 for all topic headings. */
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:12pt; font-weight:bold; }
+/* Use H2 for second-level headings. */
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:10pt; font-weight:bold; }
+/* Use H3 for third-level headings. */
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:8pt; font-weight:bold; }
+/* Use H4 for fourth-level headings. */
+H4 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:8pt; font-weight:bold; }
+/* H5 and H6 have the same definition as H4 because you should not need this
+level of heading in one topic. If you need to use H5 or H6, consider breaking up
+your topic into more than one topic. */
+H5 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:8pt; font-weight:bold; }
+H6 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:8pt; font-weight:bold; }
+/* Use the Body style class for normal paragraphs. */
+P.Body { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana;
+font-size:8pt; color:black; }
+/* Use the Anchor style class for graphic references on a line by themselves. */
+P.Anchor { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana;
+font-size:10pt; color:black; }
+/* Use the Indent style classes to indent a paragraph. If you need to indent
+text below a list item, use <br><br> to start the new paragraph within the same
+set of <li></li> tags. If you need to indent a list within another list, nest
+the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+P.Indent1 { margin-left:12.00pt; margin-top:6.00pt; margin-bottom:3.00pt;
+font-family:Verdana; font-size:8pt; color:black; }
+P.Indent2 { margin-left:24.00pt; margin-top:6.00pt; margin-bottom:3.00pt;
+font-family:Verdana; font-size:8pt; color:black; }
+P.Indent3 { margin-left:36.00pt; margin-top:6.00pt; margin-bottom:3.00pt;
+font-family:Verdana; font-size:8pt; color:black; }
+/* Use the LI style for all list items. */
+LI { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana;
+font-size:8pt; color:black; }
+/* Use the OL style for numbered lists. You do not have to type the number for
+each list item in a numbered list. */
+OL { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt;
+text-indent:0pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-type: decimal; }
+/* Use the EquationNum style class for numbered lists of equations. You do not
+have to type the number for each list item in a numbered list. */
+OL.EquationNum { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:3.00pt;
+text-indent:0pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-type: decimal; }
+/* Use the List-abc style class for lettered lists. You do not have to type the
+letter for each list item in a lettered list. */
+OL.List-abc { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt;
+text-indent:0pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-type:lower-alpha; }
+/* Use the UL style for bulleted lists. You do not have to type the bullet for
+each list item in a bulleted list. */
+UL { margin-left:12.00pt; text-indent:0pt; margin-top:3.00pt;
+margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-type: disc; }
+/* Use the List-Box style class for bulleted lists with boxes instead of
+bullets. You do not have to type the box for each list item in a box list. */
+UL.List-Box { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt;
+text-indent:0pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-type: square; }
+/* Use the List-Diamond style class for bulleted lists with diamonds instead of
+bullets. You do not have to type the diamond for each list item in a diamond
+list. */
+UL.List-Diamond { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt;
+text-indent:0pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-image:url(diamond.gif); }
+/* Use the List-Hyphen style class for bulleted lists with hyphens instead of
+bullets. You do not have to type the hyphen for each list item in a hyphen list.
+*/
+UL.List-Hyphen { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt;
+text-indent:0pt; font-family:Verdana; font-size:8pt; color:black;
+list-style-image:url(hyphen.gif); }
+/* Use the Borderless style class for tables that do not need borders, such as
+for 2-column or 3-column lists with no headings. */
+Table.Borderless { border:none; }
+/* Use the Bordered style class for tables that need borders. */
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: black;
+border-collapse: collapse; }
+/* Use the Borderless-Wide style class for tables that do not need borders and
+that you want to stretch to fill the entire topic width. */
+Table.Borderless-Wide { border:none; width:100%; }
+/* Use the Bordered-Wide style class for tables that need borders and that you
+want to stretch to fill the entire topic width. */
+Table.Bordered-Wide { border-width: 1pt; border-style: solid; border-color:
+black; width:100%; border-collapse: collapse; }
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+TD { font-family:Verdana; font-size:8pt; color:black; vertical-align:top;
+padding:3px; }
+/* Use the Bordered style class for table cells in Bordered or Bordered-Wide
+tables. */
+TD.Bordered { font-family:Verdana; font-size:8pt; color:black;
+vertical-align:top; border-width: 1pt; border-style: solid; border-color: black;
+}
+/* Use the Icon style class for table cells that contain note, caution, warning,
+or tip icons, or LabVIEW datatype terminals. */
+TD.Icon { width:40px; vertical-align:top; }
+/* Use the Table-cell-8pt style class for table cells in tables that contain a
+lot of information and need smaller text to fit it all on one screen to prevent
+a horizontal scroll bar from appearing. */
+TD.Table-cell-8pt { font-family:Verdana; font-size:7pt; color:black; }
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide
+tables. */
+TH { font-family:Verdana; font-size:8pt; color:black; font-weight:bold;
+padding:3px; }
+/* Use the Bordered style class for table heading cells in Bordered or
+Bordered-Wide tables. */
+TH.Bordered { font-family:Verdana; font-size:8pt; color:black; font-weight:bold;
+border-width: 1pt; border-style: solid; border-color: black; }
+/* Use the Table-cell-8pt style class for table heading cells in tables that
+contain a lot of information and need smaller text to fit it all on one screen
+to prevent a horizontal scroll bar from appearing. */
+TH.Table-Head-8pt { font-family:Verdana; font-size:7pt; color:black;
+font-weight:bold; }
+/* Use the Left-Align style class for table heading cells that you want to left
+align instead of center align. */
+TH.Left-Align { font-family:Verdana; font-size:8pt; color:black;
+font-weight:bold; padding:3px; text-align:left; }
+/***************************************************/
+/* CHARACTER FORMATS */
+/* The following section defines character formats that every HTML Help project
+should need. */
+/* Use the Dark-Red format for warnings or cautions. */
+#Dark-Red { color: #800000 }
+/* Use the Monospace format for code or syntax examples. */
+#Monospace { font-family: Courier New; font-size: 8pt; }
+/* Use the Monospace-Bold format for messages and responses that the computer
+automatically prints to the screen. */
+#Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+/* Use the Monospace-Italic format to denote text that is a placeholder for a
+word or value that the user must supply. */
+#Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style:
+italic; }
+/* Use the Platform format to denote a specific platform. */
+#Platform { color: #0000FF; font-weight: bold; }
+/* Use the Symbol format for characters not in the Verdana character set. Use
+this format sparingly. When possible, you should use the correct ASCII code for
+the symbol or use a graphic to recreate the symbol. */
+#Symbol { font-family: Symbol; font-size: 8pt; }
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+/* The following section defines character formats that every HTML Help project
+should need. */
+/* Use the Dark-Red format for warnings or cautions. */
+.Dark-Red { color: #800000 }
+/* Use the Monospace format for code or syntax examples. */
+.Monospace { font-family: Courier New; font-size: 8pt; }
+/* Use the Monospace-Bold format for messages and responses that the computer
+automatically prints to the screen. */
+.Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+/* Use the Monospace-Italic format to denote text that is a placeholder for a
+word or value that the user must supply. */
+.Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style:
+italic; }
+/* Use the Platform format to denote a specific platform. */
+.Platform { color: #0000FF; font-weight: bold; }
+/* Use the Symbol format for characters not in the Verdana character set. Use
+this format sparingly. When possible, you should use the correct ASCII code for
+the symbol or use a graphic to recreate the symbol. */
+.Symbol { font-family: Symbol; font-size: 8pt; }
+/* Use the Red-text format to call attention to text that needs information
+added or edited by techcomm */
+.Red-text {color: #FF0000;}
+/* Use the Green-Underline format for the green defintion in the conventions
+topic */
+.Green-Underline {color: #007700; text-decoration : underline;}
+/* Use the glossButton format for the glossary buttons used in the glossary
+topic */
+.glossButton { font-family:Verdana, sans-serif; font-size:12px; color:black; }
+/* Use for text sections and hyphenated words that should not break at line
+wraps */
+span.nobreak{white-space:nowrap}
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:hover { color: #FF0000 }
+a:active { color: #FF0000 }
+a:visited { color: #7F007F }
+/***************************************************/
+/* ACTIVITY STYLES */
+/* The following section defines styles that only tutorial-style HTML Help
+projects should need. */
+/* Use the Activity-Objective style class for the objective at the beginning of
+an activity topic. */
+H3.Activity-Objective { color: #800000; }
+/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections
+of code or syntax examples. If you have just a few words you need to format as a
+code or syntax example, use the Monospace character format. */
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;
+font-size:8pt; color:black; }
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt;
+font-family:Courier New; font-size:8pt; color:black; }
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt;
+font-family:Courier New; font-size:8pt; color:black; }
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt;
+font-family:Courier New; font-size:8pt; color:black; }
+/***************************************************/
+/* FUNCTION STYLES */
+/* The following section defines styles that you might need to format function
+reference help. */
+P.F-VI-Code4 { margin-left:48.00pt; margin-top:3.00pt; margin-bottom:0.00pt;
+font-family:Courier New; font-size:8pt; color:black; }
+P.F-VI-Code5 { margin-left:60.00pt; margin-top:3.00pt; margin-bottom:0.00pt;
+font-family:Courier New; font-size:8pt; color:black; }
+P.F-VI-Equation { margin-top:9.00pt; margin-bottom:9.00pt; font-family:Verdana;
+font-size:8pt; color:black; }
+OL.F-VI-EquationNum { margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt;
+font-family:Verdana; font-size:8pt; color:black; list-style-type: decimal; }
+CITE.expandspot { font-style : normal;
+color : green;
+cursor: hand;}
+.mvd-CITE-expandspot { font-style : normal;
+color : green;
+cursor: hand;}
+DFN.collapsed { font-style : italic;
+font-weight : normal;
+display : 'none';
+color : red;}
+.mvd-DFN-collapsed { font-style : italic;
+font-weight : normal;
+display : 'none';
+color : red;}
+DFN.expanded { font-style : italic;
+font-weight : normal;
+color : red;}
+.mvd-DFN-expanded { font-style : italic;
+font-weight : normal;
+color : red;}
+EM.dropspot { cursor : hand;
+color : green;}
+.mvd-EM-dropspot { cursor : hand;
+color : green;}
+</style>
+<noscript><p class="Body"><strong>JavaScript
+(active content) is
+disabled. For all content to be accessible, you must enable JavaScripts
+in your browser.</strong></p>
+</noscript>
+
+
+
+
+<body style="background-color: rgb(255, 255, 255);">
+<h1>NI High Frequency Network Analysis Library 1.0 Readme</h1>
+<p class="Body">January 2016</p>
+<p class="Body">Thank you for using NI High Frequency Network Analysis Library, version
+1.0. The readme contains the following main sections:</p>
+
+<p class="Body"><a href="#requirements">System Requirements</a></p>
+<p class="Body"><a href="#installed_files">Installed Software, Documentation, and Examples</a></p>
+	<p class="Indent1"><a href="#docs">Documentation</a></p>
+	<p class="Indent1"><a href="#VIsFunctions">Accessing VIs and Functions</a></p>
+	<p class="Indent1"><a href="#examples">Finding Examples</a></p>
+<p class="Body"><a href="#updates">Product Security and Critical Updates</a></p>
+<p class="Body"><a href="#autoinstall">Automating the Installation of NI Products</a></p>
+<p class="Body"><a href="#win8">How to Use NI Software with Microsoft Windows 8</a></p>
+<p class="Body"><a href="#legal">Legal Information</a></p>
+
+<hr>
+
+<h2><a name="requirements" id="requirements"></a>System Requirements</h2>
+
+<h3>Supported Operating Systems</h3>
+
+<p class="Body">NI High Frequency Network Analysis Library 1.0 and later supports the following operating systems:</p>
+
+<ul>
+	<li>Windows 8.1 (32-bit and 64-bit)</li>
+	<li>Windows 8 (32-bit and 64-bit)</li>
+	<li>Windows 7 (32-bit and 64-bit)</li>
+	<li>Windows Vista (32-bit and 64-bit)</li>
+	<li>Windows XP Service Pack 3 (32-bit)</li>
+	<li>Windows Server 2003 R2 (32-bit)</li>
+	<li>Windows Server 2008 R2 (64-bit)</li>
+	<li>Windows Server 2012 R2 (64-bit)</li>
+</ul>
+
+<p class="Body"><strong>Note</strong>&nbsp;&nbsp; NI High Frequency Network Analysis Library 1.0 and later does not support Windows Server non-R2 editions.</p>
+
+<p class="Body">NI recommends that you have the most recent service pack for your operating system installed.</p>
+
+<h3>Minimum System Requirements</h3>
+
+<ul>
+	<li>Processor&#8212;Intel i3 or equivalent</li>
+	<li>RAM&#8212;
+	<ul>
+		<li><strong>Windows 8.1/8/7/Vista:</strong> 2 GB&#42;</li>
+		<li><strong>Windows XP SP3:</strong> 256 MB&#42;</li>
+	</ul>
+	</li>
+	<li>A screen resolution of 1,024 x 768</li>
+	<li>Windows 8.1/8/7/Vista/XP SP3, with all available critical updates and service packs</li>
+	<li>If you are running your application on an RT target, 128 MB of memory or more is recommended.</li>
+</ul>
+
+<h3>Recommended System</h3>
+
+<ul>
+	<li>Processor&#8212;Intel i5 or equivalent</li>
+	<li>RAM&#8212;
+	<ul>
+		<li><strong>Windows 8.1/8/7/Vista:</strong> 4 GB&#42;</li>
+		<li><strong>Windows XP SP3:</strong> 2 GB&#42;</li>
+	</ul>
+	</li>
+	<li>A screen resolution of 1,024 x 768</li>
+	<li>Windows 8.1/8/7/Vista/XP SP3, with all available critical updates and service packs</li>
+	<li>If you are running your application on an RT target, 128 MB of memory or more is recommended.</li>		
+</ul>
+
+<p class="Body"><strong>Note</strong>&nbsp;&nbsp; Instrument drivers are not required for NI High Frequency Network Analysis Library.</p>
+
+<h3><a name="ADEversion" id="ADEversion">Application Development Environments (ADEs)</a></h3>
+
+<p class="Body"><strong>Note</strong>&nbsp;&nbsp;You should install ADEs, such as NI LabVIEW before installing NI High Frequency Network Analysis Library.</p>
+
+<ul class="List-Hyphen">
+	<li>NI LabVIEW  2012 SP1 (32-bit and 64-bit), 2013 SP 1 (32-bit and 64-bit)</li>
+</ul>
+
+<h2><a name="installed_files" id="installed_files">Installed Software, Documentation, and Examples</a></h2>
+
+<h3>Installed Software</h3>
+
+<ul>
+	<li><span class="Monospace-Italic">&#60;NIDIR&#62;</span> is an alias for the following National Instruments file folder location:
+	<ul>
+		<li><strong>Windows 8.1 (32-bit)/8 (32-bit)/7 (32-bit)/Vista (32-bit)/XP:</strong> <span class="Monospace">Program Files\National Instruments</span></li>
+		<li><strong>Windows 8.1 (64-bit)/8 (64-bit) /7 (64-bit)/Vista (64-bit):</strong> <span class="Monospace">Program Files (x86)\National Instruments</span></li>
+	</ul>
+	</li>
+	<li><span class="Monospace-Italic">&#60;labVIEW&#62;</span> is an alias for the following National Instruments file folder location:
+	<ul>
+    	<li><strong>Windows 8.1/8/7/Vista/XP:</strong> <span class="Monospace">&#60;NIDIR&#62;\LabVIEW &#60;year&#62;</span></li>
+	</ul>
+	</li>
+</ul>
+
+<h4>File Locations</h4>
+
+<table class="Bordered">
+	<tr>
+		<th class="Bordered">Item</th>
+		<th class="Bordered">Installed Location on Windows 8.1/8/7/Vista/XP</th>
+	</tr>
+	<tr>
+		<td class="Bordered">VIs</td>
+		<td class="Bordered"><span id="Monospace"><span class="Monospace-Italic">&#60;labVIEW&#62;</span></span><span class="Monospace">\vi.lib\addons\HF Network Analysis</span></td>
+	</tr>
+	<tr>
+		<td class="Bordered">Examples</td>
+		<td class="Bordered"><span class="Monospace"><span class="Monospace-Italic">&#60;labVIEW&#62;</span>\examples\HF Network Analysis</span></td>
+	</tr>
+</table>
+
+<h3><a name="docs" id="docs">Documentation</a></h3>
+
+<p class="Body">The documentation set is composed of the following documents.</p>
+
+<table class="Bordered">
+	<tr>
+		<th class="Bordered">Document</th>
+		<th class="Bordered">Format</th>
+		<th class="Bordered">Description</th>
+		<th class="Bordered">Location</th>
+	</tr>
+	<tr>
+		<td class="Bordered"><em>NI High Frequency Network Analysis LabVIEW Help</em></td>
+		<td class="Bordered">HTML/Windows Help</td>
+		<td class="Bordered">Contains primary help content for NI High Frequency Network Analysis Library. The help is an HTML version of a traditional user manual that includes the following information:
+		<ul>
+			<li>A complete reference for all NI High Frequency Network Analysis Library programming functions and VIs</li>
+		</ul>
+		</td>
+		<td class="Bordered"><span id="Monospace"><span class="Monospace-Italic">&#60;labVIEW&#62;</span></span><span class="Monospace">\help\lvhfna.chm</span></td>
+	</tr>
+	<tr>
+		<td class="Bordered"><em>NI High Frequency Network Analysis Library Readme</em></td>
+		<td class="Bordered">HTML (this document)</td>
+		<td class="Bordered">Contains information about supported hardware and operating systems, new features, fixed issues, and legal notices.</td>
+		<td class="Bordered"><span id="Monospace"><span class="Monospace-Italic">&#60;labVIEW&#62;</span></span><span class="Monospace">\addons\HF Network Analysis\readme.html</span></td>
+	</tr>
+</table>
+
+<h4><a name="VIsFunctions" id="VIsFunctions">Accessing VIs and Functions</a></h4>
+
+<p class="Body">NI High Frequency Network Analysis Library palette VIs are available from the <strong>Functions</strong>&#187;<strong>addons</strong>&#187;<strong>HF Network Analysis</strong> palette.</p>
+
+<h4><a name="examples">Finding Examples</a></h4>
+
+<p class="Body">In LabVIEW, you can use the NI Example Finder to search or browse examples. In LabVIEW, select <strong>Help</strong>&#187;<strong>Find Examples</strong> to launch the NI Example Finder. The NI Example Finder offers two ways to access all installed LabVIEW example VIs (including NI High Frequency Network Analysis Library examples) and their descriptions:</p>
+
+<ul>
+	<li>Click the <strong>Browse</strong> tab to locate modulation examples by task at <strong>Toolkit and Modules</strong>&#187;<strong>Modulation </strong>or by directory structure at <strong>HF Network Analysis</strong>.</li>
+	<li>Click the <strong>Search</strong> tab to search all installed examples by keyword. For example, search for "Network Analysis" to locate all NI High Frequency Network Analysis Library examples.</li>
+</ul>
+
+<h2><a name="updates" id="updates">Product Security and Critical Updates</a></h2>
+
+<p class="Body">Visit <a href="http://www.ni.com/security" target="_blank">ni.com/security</a> to view and subscribe to receive security notifications about National Instruments products. Visit <a href="http://ni.com/critical-updates" target="_blank">ni.com/critical-updates</a> for information about critical updates from National Instruments.</p>
+
+<!--Begin Windows Readme Boilerplate content-->
+<h2><a name="autoinstall" id="autoinstall">Automating the Installation of NI Products</a></h2>
+
+<p class="Body">You can automate the installation of most NI products using command-line arguments to suppress some or all of the installer user interface and dialog boxes. However, starting with the August 2012 releases (products using NI Installers version 3.1 or later), you may need to perform additional steps before or during a silent installation of NI software.</p>
+
+<p class="Body">If the NI product you are installing uses Microsoft .NET 4.0, the .NET installer may run before any NI software installs and may require a reboot before the installation of NI software begins. To avoid a .NET reboot, install .NET 4.0 separately before you install NI software.</p>
+
+<p class="Body">For more information about automating the installation of NI products, refer to the following KnowledgeBase articles:</p>
+
+<ul>
+	<li>For more information about silent installations of individual NI products, refer to KB 4CJDP38M, <a href="http://digital.ni.com/express.nsf/bycode/InstallerAutomation" target="_blank">Automating the Installation of a Single Installer</a>.</li>
+	<li>For more information about silent installations of NI products in a suite, such as NI Developer Suite, refer to KB 4GGGDQH0, <a href="http://digital.ni.com/express.nsf/bycode/SuiteInstallerAutomation" target="_blank">Automating the Installation of a Suited Installer</a>.</li>
+	<li>To determine what version of NI Installers your product contains, refer to KB 4CJDR18M, <a href="http://digital.ni.com/express.nsf/bycode/InstallerVersion" target="_blank">How Can I Determine the Type and Version of My National Instruments Installer?</a>.</li>
+</ul>
+
+<h2><a name="win8">How to Use NI Software with Microsoft Windows 8.<em>x</em></a></h2>
+
+<p class="Body">When you install National Instruments software on Microsoft Windows 8.<em>x</em>, you will notice a few additional tiles in the Apps view, including shortcuts to NI application software products such as NI LabVIEW, Measurement &amp; Automation Explorer (NI MAX), and NI Launcher.</p>
+
+<h3>Using NI Launcher</h3>
+
+<p class="Body">NI Launcher helps you find and launch installed NI products. It provides you with a method of finding NI products similar to the Start menu in previous versions of Microsoft Windows. To use NI Launcher, click the <strong>NI Launcher</strong> tile in the Apps view. NI&nbsp;Launcher launches the desktop and opens a menu containing a list of NI products. Click any NI product to launch it.</p>
+
+<table class="Borderless">
+	<tr>
+		<td><strong>Note</strong>&nbsp;&nbsp;NI MAX does not appear as a desktop shortcut when installed on Microsoft Windows 8.<em>x</em>. You can launch NI MAX either from the Apps view or from within NI Launcher. </td>
+	</tr>
+</table>
+
+<h3>Pinning Frequently Used Applications</h3>
+
+<p class="Body">For convenience, you can pin your most-used NI applications, such as MAX, to either the Start screen or the Taskbar on the desktop, as necessary.</p>
+
+<table class="Bordered">
+	<tr>
+		<td class="Bordered"><strong>Current Application</strong></td>
+		<td class="Bordered"><strong>Icon Location</strong></td>
+		<td class="Bordered"><strong>Pin to Action</strong></td>
+	</tr>
+	<tr>
+		<td class="Bordered">Windows 8.<em>x</em> Desktop</td>
+		<td class="Bordered">Desktop Taskbar</td>
+		<td class="Bordered">Right-click application and select <strong>Pin to Taskbar</strong></td>
+	</tr>
+	<tr>
+		<td class="Bordered">Windows 8.<em>x</em> Desktop</td>
+		<td class="Bordered">Start screen</td>
+		<td class="Bordered">Right-click application and select <strong>Pin to Start</strong></td>
+	</tr>
+	<tr>
+		<td class="Bordered">Windows 8.<em>x</em> Start screen</td>
+		<td class="Bordered">Desktop Taskbar</td>
+		<td class="Bordered">Right-click application and select <strong>Pin to taskbar</strong> from the menu bar on the bottom of the screen</td>
+	</tr>
+</table>
+
+<h3>Finding All Programs</h3>
+
+<p class="Body">If you want to find a particular application or related files, such as documentation files, from the Start screen, you can access all installed files from the Apps view. To get to the Apps view, right-click anywhere on the Start screen and select <strong>All apps</strong> (Windows 8) or click the down arrow on the bottom left of the screen (Windows 8.1).</p>
+
+<p class="Body">For more information about NI support for Windows 8.<em>x</em>, visit <a href="http://ni.com/windows8" target="_blank">ni.com/windows8</a>.</p>
+
+<!-- Windows 8 Support Information -->
+
+<!-- Windows XP support information -->
+
+<hr>
+
+<h2><a name="legal">Legal Information</a></h2>
+<!--Copyright-->
+<p class="Body"><strong>Copyright</strong></p>
+<p class="Body">&#0169; 2015-2016 National Instruments. All rights reserved.</p>
+
+<p class="Body">Under the copyright laws, this publication may not be reproduced or transmitted in any form, electronic or mechanical, including photocopying, recording, storing in an information retrieval system, or translating, in whole or in part, without the prior written consent of National Instruments Corporation.</p>
+
+<p class="Body">National Instruments respects the intellectual property of others, and we ask our users to do the same.  NI software is protected by copyright and other intellectual property laws.  Where NI software may be used to reproduce software or other materials belonging to others, you may use NI software only to reproduce materials that you may reproduce in accordance with the terms of any applicable license or other legal restriction.</p>
+
+<p class="Body"><strong>End-User License Agreements and Third-Party Legal Notices</strong></p>
+<p class="Body">You can find end-user license agreements (EULAs) and third-party legal notices in the following locations after installation:</p>
+<ul>
+	<li>Notices are located in the <span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span> and <span class="Monospace">&lt;National Instruments&gt;</span> directories.</li>
+	<li>EULAs are located in the <span class="Monospace">&lt;National Instruments&gt;\Shared\MDF\Legal\license</span> directory.</li>
+	<li>Review <span class="Monospace">&lt;National Instruments&gt;\_Legal Information.txt</span> for information on including legal information in installers built with NI products.</li>
+</ul>
+
+<p><strong>IVI Foundation Copyright Notice</strong></p>
+
+<p class="Body"><span class="DNL">Content from the IVI specifications reproduced with permission from the IVI Foundation.</span></p>
+
+<p class="Body"><span class="DNL">The IVI Foundation and its member companies make no warranty of any kind with regard to this material, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The IVI Foundation and its member companies shall not be liable for errors contained herein or for incidental or consequential damages in connection with the furnishing, performance, or use of this material.</span></p>
+
+<p class="Body"><strong>Trademarks</strong></p>
+
+<p class="Body">Refer to the <em><span class="DNL">NI Trademarks and Logo Guidelines</span></em> at <a href="http://digital.ni.com/express.nsf/bycode/rdtrad" target="_blank"><span class="DNL">ni.com/trademarks</span></a> for information on <span class="DNL">National Instruments</span> trademarks. Other product and company names mentioned herein are trademarks or trade names of their respective companies.</p>
+
+<p class="Body"><strong>Patents</strong></p>
+
+<p class="Body">For patents covering the National Instruments products/technology, refer to the appropriate location: <strong>Help&#187;Patents</strong> in your software, the <span class="Monospace">patents.txt</span> file on your media, or the <em>National Instruments Patent Notice</em> at <a href="http://digital.ni.com/express.nsf/bycode/rdlv17" target="_blank">ni.com/patents</a>.</p>
+
+</body></html>

@@ -1,0 +1,5 @@
+Site,Pin,26GHz PXI Path,High Limit,Low Limit,Interval,Sweep Name,Power,Test Receiver Attenuation,IF Bandwidth,Frequencies,,,,
+0,RFPin1,1,0,-5,30,mySweep,-10,0,100k,{2G:100M:2.4G}
+0,RFPin2,1,0,-5,30,mySweep,,,,,,,,
+1,RFPin1,1,0,-5,30,mySweep,,,,,,,,
+1,RFPin2,1,0,-5,30,mySweep,,,,,,,,

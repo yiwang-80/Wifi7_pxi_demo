@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" schemaVersion="1.0" xmlns="http://www.ni.com/TestStand/SemiconductorModule/SystemConfiguration.xsd">
+  <PartNumber Value="123456-78" />
+	<PXIChassis Number="1" Model="NI PXIe-1095">
+      <PXI Name="VST_5841_Cx_Sxx" Model="NI PXIe-5841" Slot="5">
+	    <PortControlModule Name="VST_5841_Cx_Sxx_PCM" Model="NI STS-5532">
+	      <PortModule Name="PM1" Model="NI STS-5531" DigitalSlot="1" AnalogChannel="1" />
+	      <PortModule Name="PM2" Model="NI STS-5531" DigitalSlot="2" AnalogChannel="2" />
+	    </PortControlModule>
+      </PXI>
+      <PXI Name="HSD_6570_Cx_Sxx" Model="NI PXIe-6570" Slot="11" />
+      <PXI Name="SMU_4139_Cx_Sxx" Model="NI PXIe-4139" Slot="13" />
+  </PXIChassis>
+</SystemConfiguration>

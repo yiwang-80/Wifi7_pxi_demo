@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="BB765A48CC3A02CDD3A32C7AC988BE3BFEEF7B63CB5D9A2DC766E009AEF147DA9AA35F24DE68045EA92DACED9F9473BA162683D8FE56D9F890A75923B4ED2A12" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="24.5.0.50111" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="9.13.0.50111" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="24.5.0.50111" Name="InstrumentStudio" PersistenceVersion="22.1.0.0" Version="24.5.0.50111" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="1fbd43fe71524fb68c467d21bd55e7d7" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="66c19440f7554bab9c87124be165f225" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="4e79098ac3b4413db9257cae7414e248" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<SourceFileReference Bindings="EnvoyManager" Id="39c8508003794ffb8c77199fb06994fc" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="Instrument.sfp" StoragePath="Instrument.sfp" />
+			<FileReference Id="5600b0f90ad648be878768edd07b1939" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="RF_Demo_20250205_01.pinmap" StoragePath="..\..\Supporting Materials\Pin Maps\RF_Demo_20250205_01.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>

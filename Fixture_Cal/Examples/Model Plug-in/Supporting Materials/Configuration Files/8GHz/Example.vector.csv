@@ -1,0 +1,5 @@
+Site,Pin,26GHz Path,High Limit,Low Limit,Interval,Sweep Name,Power,Test Receiver Attenuation,IF Bandwidth,Frequencies,,,,
+0,RFIN,1,0,-5,30,mySweep,-10,0,100k,{2G:100M:2.4G}
+0,RFOUT,1,0,-5,30,mySweep,,,,,,,,
+1,RFIN,1,0,-5,30,mySweep,,,,,,,,,
+1,RFOUT,1,0,-5,30,mySweep,,,,,,,,

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.1" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIModelBasedInstrument name="PXI1Slot8" instrumentModel="PXIe-5633" category="RF" subcategory="PXIe-5633">
+			<Resource owner="VNA">
+				<UserData propertyName="Resource Name" propertyValue="PXI1Slot8" />
+			</Resource>
+		</NIModelBasedInstrument>
+	</Instruments>
+	<Pins>
+		<DUTPin name="RFPin1" />
+		<DUTPin name="RFPin2" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="RFPin1" siteNumber="0" instrument="PXI1Slot8" channel="Port1" />
+		<Connection pin="RFPin2" siteNumber="0" instrument="PXI1Slot8" channel="Port2" />
+	</Connections>
+</PinMap>

@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = RFFEBase
+build_property.ProjectDir = C:\srd-sebu-apt-ref-solutions\AutomationFramework\Code Modules\RFFEDotNetRefLibrary\RFFEBase\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
